@@ -5,7 +5,7 @@
  */
 
 /**
- *
+ * @author Ed. Chamo
  * @author Daniel
  */
 public interface Interfaz {

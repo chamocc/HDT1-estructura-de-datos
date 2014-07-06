@@ -5,7 +5,7 @@
  */
 
 /**
- *
+ * @author Daniel
  * @author Ed. Chamo
  */
 public class Carro {
