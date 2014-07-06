@@ -25,34 +25,68 @@ public class Radio implements Interfaz{
     }
     
     @Override
-    public void cambiarFrecuencia(boolean frecuencia) {
-       frecuencia=true;
+    public void cambiarFrecuencia(boolean _frecuencia) {
+       frecuencia=_frecuencia;
     }
 
     @Override
     public double sacar(int boton) {
-        //todavía falta programarlo
-        return 9;
+        double val;
+        if(frecuencia){
+            val=favoritosFM[boton];
+        }else{
+            val=favoritosAM[boton];
+        }
+        return val;
     }
 
     @Override
     public void apagar() {
+        power=false;
     }
 
     @Override
     public void encender() {
+        power=true;
     }
 
     @Override
     public void guardar(int boton, double estacion) {
+         if(frecuencia){
+            favoritosFM[boton]=estacion;
+        }else{
+            favoritosAM[boton]=estacion;
+        }
     }
 
     @Override
     public void subirEstacion(boolean frecuencia) {
+         if(frecuencia){
+            frecuenciaFM+=0.2;
+            if(frecuenciaFM>107.9){
+                frecuenciaFM=87.9;
+            }
+        }else{
+            frecuenciaAM+=10;
+            if(frecuenciaAM>1610){
+                frecuenciaAM=530;
+            }
+        }
     }
 
     @Override
     public void bajarEstacion(boolean frecuencia) {
+        if(frecuencia){
+            frecuenciaFM-=0.2;
+            if(frecuenciaFM<87.9){
+                frecuenciaFM=107.9;
+            }
+        }else{
+            frecuenciaAM-=10;
+            if(frecuenciaAM<530){
+                frecuenciaAM=1610;
+            }
+        }
     }
     
 }
