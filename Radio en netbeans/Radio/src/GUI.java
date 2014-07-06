@@ -39,6 +39,11 @@ public class GUI extends javax.swing.JFrame {
         });
 
         BajarVolumen.setText("-");
+        BajarVolumen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BajarVolumenActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -66,6 +71,10 @@ public class GUI extends javax.swing.JFrame {
     private void SubirVolumenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubirVolumenActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SubirVolumenActionPerformed
+
+    private void BajarVolumenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BajarVolumenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BajarVolumenActionPerformed
 
     /**
      * @param args the command line arguments
