@@ -17,6 +17,7 @@ public class Sony extends JPanel {
 	public Sony(){
 		//Nuevo panel
 		p = new JPanel();
+		//lkdslkjfaslkfj
 		
 		//Botones
 		btONOFF = new JButton("ON/OFF");
