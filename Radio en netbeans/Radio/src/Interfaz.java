@@ -6,8 +6,16 @@
 
 /**
  *
- * @author Ed. Chamo
+ * @author Daniel
  */
-public class Interfaz {
+public interface Interfaz {
+    
+    public void cambiarFrecuencia(boolean frecuencia);
+    public double sacar(int boton);
+    public void apagar();
+    public void encender();
+    public void guardar(int boton, double estacion);
+    public void suberEstacion(boolean frecuencia);
+    public void bajarEstacion(boolean frecuencia);
     
 }
