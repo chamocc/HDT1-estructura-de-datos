@@ -27,6 +27,7 @@ public class GUI extends javax.swing.JFrame {
     private void initComponents() {
 
         SubirVolumen = new javax.swing.JButton();
+        BajarVolumen = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,12 +38,16 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        BajarVolumen.setText("-");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(SubirVolumen)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(BajarVolumen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(SubirVolumen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 359, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -50,7 +55,9 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(209, Short.MAX_VALUE)
                 .addComponent(SubirVolumen)
-                .addGap(68, 68, 68))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BajarVolumen)
+                .addGap(39, 39, 39))
         );
 
         pack();
@@ -96,6 +103,7 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BajarVolumen;
     private javax.swing.JButton SubirVolumen;
     // End of variables declaration//GEN-END:variables
 }
