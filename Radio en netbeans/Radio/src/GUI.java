@@ -41,7 +41,7 @@ public class GUI extends JPanel{
     
     }
     
-    /** encendido: este metodo se encarga de desahabilitar los botones dentro del panel */
+    /** encendido: este metodo se encarga de habilitar los botones dentro del panel */
      public void encendido()
      {
         bajarEstacion.setEnabled(true);
@@ -54,7 +54,7 @@ public class GUI extends JPanel{
         }
      }
      
-     /** encendido: este metodo se encarga de desahabilitar los botones dentro del panel */
+     /** apagado: este metodo se encarga de desahabilitar los botones dentro del panel */
      public void apagado()
      {
         bajarEstacion.setEnabled(false);
