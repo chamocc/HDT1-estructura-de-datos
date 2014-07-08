@@ -88,10 +88,10 @@ public class GUI extends JPanel{
 			{
                             if(miRadio.getFrecuencia()){
                                 miRadio.cambiarFrecuencia(false);
-                                frecuencia.setText("FM");
+                                frecuencia.setText("AM");
                             }else{
                                 miRadio.cambiarFrecuencia(true);
-                                frecuencia.setText("AM");
+                                frecuencia.setText("FM");
                             }
                         } 
             }
