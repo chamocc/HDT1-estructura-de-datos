@@ -23,42 +23,54 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="BajarVolumen" max="32767" attributes="0"/>
-                  <Component id="SubirVolumen" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="BajarEstacion" max="32767" attributes="0"/>
+                      <Component id="SubirEstacion" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="poder" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="0" pref="359" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="329" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="209" max="32767" attributes="0"/>
-              <Component id="SubirVolumen" min="-2" max="-2" attributes="0"/>
+              <Component id="poder" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="186" max="32767" attributes="0"/>
+              <Component id="SubirEstacion" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="BajarVolumen" min="-2" max="-2" attributes="0"/>
+              <Component id="BajarEstacion" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="SubirVolumen">
+    <Component class="javax.swing.JButton" name="SubirEstacion">
       <Properties>
         <Property name="text" type="java.lang.String" value="+"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SubirVolumenActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SubirEstacionActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="BajarVolumen">
+    <Component class="javax.swing.JButton" name="BajarEstacion">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BajarVolumenActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BajarEstacionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="poder">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ON/OFF"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="poderActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

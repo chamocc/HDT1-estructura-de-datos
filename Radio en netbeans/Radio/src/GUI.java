@@ -10,10 +10,12 @@
  */
 public class GUI extends javax.swing.JFrame {
 
-    /**
-     * Creates new form GUI
-     */
+    private boolean estado;
+    private Radio miRadio;
+    
+    //constructor
     public GUI() {
+        miRadio=new Radio();
         initComponents();
     }
 
@@ -26,22 +28,30 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        SubirVolumen = new javax.swing.JButton();
-        BajarVolumen = new javax.swing.JButton();
+        SubirEstacion = new javax.swing.JButton();
+        BajarEstacion = new javax.swing.JButton();
+        poder = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        SubirVolumen.setText("+");
-        SubirVolumen.addActionListener(new java.awt.event.ActionListener() {
+        SubirEstacion.setText("+");
+        SubirEstacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SubirVolumenActionPerformed(evt);
+                SubirEstacionActionPerformed(evt);
             }
         });
 
-        BajarVolumen.setText("-");
-        BajarVolumen.addActionListener(new java.awt.event.ActionListener() {
+        BajarEstacion.setText("-");
+        BajarEstacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BajarVolumenActionPerformed(evt);
+                BajarEstacionActionPerformed(evt);
+            }
+        });
+
+        poder.setText("ON/OFF");
+        poder.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                poderActionPerformed(evt);
             }
         });
 
@@ -50,31 +60,54 @@ public class GUI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(BajarVolumen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(SubirVolumen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 359, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(BajarEstacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(SubirEstacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(poder))
+                .addGap(0, 329, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(209, Short.MAX_VALUE)
-                .addComponent(SubirVolumen)
+                .addComponent(poder)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 186, Short.MAX_VALUE)
+                .addComponent(SubirEstacion)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BajarVolumen)
+                .addComponent(BajarEstacion)
                 .addGap(39, 39, 39))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SubirVolumenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubirVolumenActionPerformed
+    private void SubirEstacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubirEstacionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SubirVolumenActionPerformed
+    }//GEN-LAST:event_SubirEstacionActionPerformed
 
-    private void BajarVolumenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BajarVolumenActionPerformed
+    private void BajarEstacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BajarEstacionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BajarVolumenActionPerformed
+    }//GEN-LAST:event_BajarEstacionActionPerformed
+
+    private void poderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_poderActionPerformed
+        // TODO add your handling code here:
+        if (evt.getSource() == poder)
+        {
+            int cont=0;
+            miRadio.apagar();
+            if (cont%2==0)
+            {
+            SubirEstacion.setEnabled(false);
+            BajarEstacion.setEnabled(false);
+            }
+            else
+            {
+            SubirEstacion.setEnabled(true);
+            BajarEstacion.setEnabled(true);
+            }
+            cont=cont+1;
+        }
+    }//GEN-LAST:event_poderActionPerformed
 
     /**
      * @param args the command line arguments
@@ -112,7 +145,8 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BajarVolumen;
-    private javax.swing.JButton SubirVolumen;
+    private javax.swing.JButton BajarEstacion;
+    private javax.swing.JButton SubirEstacion;
+    private javax.swing.JButton poder;
     // End of variables declaration//GEN-END:variables
 }

@@ -89,4 +89,10 @@ public class Radio implements Interfaz{
         }
     }
     
+    @Override
+    public boolean getEstado() {
+        return power;
+    }
+    
+    
 }
