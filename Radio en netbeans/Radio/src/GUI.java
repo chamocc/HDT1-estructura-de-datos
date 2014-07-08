@@ -29,7 +29,7 @@ public class GUI extends JPanel{
         miRadio=new Radio();
         guardar=false;
         bajarEstacion=new JButton("-");
-        bajarEstacion=new JButton("+");
+        subirEstacion=new JButton("+");
         power=new JButton("OFF");
         frecuencia=new JButton("FM");
         guardarLeer=new JButton("Guardar");
@@ -77,8 +77,10 @@ public class GUI extends JPanel{
 			{
                             if(miRadio.getFrecuencia()){
                                 miRadio.cambiarFrecuencia(false);
+                                frecuencia.setText("AM");
                             }else{
                                 miRadio.cambiarFrecuencia(true);
+                                frecuencia.setText("FM");
                             }
                         } 
             }
