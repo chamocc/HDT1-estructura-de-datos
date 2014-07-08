@@ -17,13 +17,25 @@ import javax.swing.*;
  */
 public class GUI extends JPanel{
     
-    private JButton bajarEstacion, subirEstacion, power, frecuencia;
+    private JButton bajarEstacion, subirEstacion, power, frecuencia, guardarLeer;
     private JButton[] favoritos;
     private JLabel estacion;
     private Radio miRadio;
     private boolean guardar;
     
     public GUI(){
+        miRadio=new Radio();
+        guardar=false;
+        bajarEstacion=new JButton("-");
+        bajarEstacion=new JButton("+");
+        power=new JButton("OFF");
+        frecuencia=new JButton("FM");
+        guardarLeer=new JButton("Guardar");
+        
+        favoritos=new JButton[12];
+        for(int i=0; i<12; i++){
+            favoritos[i]=new JButton("Fav #"+(i+1));
+        }
         
     }
 }
