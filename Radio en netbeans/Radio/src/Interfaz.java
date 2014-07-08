@@ -17,6 +17,8 @@ public interface Interfaz {
     public void guardar(int boton, double estacion);
     public void subirEstacion(boolean frecuencia);
     public void bajarEstacion(boolean frecuencia);
-    public boolean getEstado();
+    public boolean getEncendido();
+    public double getEstacion();
+    public boolean getFrecuencia();
     
 }

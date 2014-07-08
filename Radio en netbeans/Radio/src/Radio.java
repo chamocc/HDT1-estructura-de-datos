@@ -94,5 +94,21 @@ public class Radio implements Interfaz{
         return power;
     }
     
+    @Override
+    public double getEstacion(){
+        double val=0;
+        if(frecuencia){
+            val=frecuenciaFM;
+        }else{
+            val=frecuenciaAM;
+        }
+        return val;
+    }
+    
+    @Override
+    public boolean getFrecuencia(){
+        return frecuencia;
+    }
+    
     
 }
