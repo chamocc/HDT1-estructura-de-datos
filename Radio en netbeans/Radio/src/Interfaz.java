@@ -5,8 +5,9 @@
  */
 
 /**
- * @author Ed. Chamo
- * @author Daniel
+ * @author Daniel 13158
+ * @author Edgar Chamo 13083
+ * @author Alejandro Diaz 13082
  */
 public interface Interfaz {
     

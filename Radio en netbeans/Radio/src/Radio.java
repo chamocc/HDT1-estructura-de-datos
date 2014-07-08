@@ -5,8 +5,9 @@
  */
 
 /**
- * @author Daniel
- * @author Ed. Chamo
+ * @author Daniel 13158
+ * @author Edgar Chamo 13083
+ * @author Alejandro Diaz 13082
  */
 public class Radio implements Interfaz{
 
