@@ -46,6 +46,13 @@ public class GUI extends JPanel{
         power.addActionListener(listener1);
         frecuencia.addActionListener(listener1);
         guardarLeer.addActionListener(listener1);
+        
+        add(bajarEstacion);
+        add(subirEstacion);
+        add(estacion);
+        add(power);
+        add(frecuencia);
+        add(guardarLeer);
     }
     
     private class ListenerBoton implements ActionListener
