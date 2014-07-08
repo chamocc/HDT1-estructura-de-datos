@@ -90,7 +90,7 @@ public class Radio implements Interfaz{
     }
     
     @Override
-    public boolean getEstado() {
+    public boolean getEncendido() {
         return power;
     }
     
