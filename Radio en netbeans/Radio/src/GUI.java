@@ -11,9 +11,9 @@ import javax.swing.*;
 
 /**
  *
- * @author Daniel
- * @author Edgar Chamo
- * @author Alejandro Diaz
+ * @author Daniel 13158
+ * @author Edgar Chamo 13083
+ * @author Alejandro Diaz 13082
  */
 public class GUI extends JPanel{
     
@@ -85,7 +85,7 @@ public class GUI extends JPanel{
 
     }
     
-    /** encendido: este metodo se encarga de desahabilitar los botones dentro del panel */
+    /** encendido: este metodo se encarga de habilitar los botones dentro del panel */
      public void encendido()
      {
         bajarEstacion.setEnabled(true);
@@ -98,7 +98,7 @@ public class GUI extends JPanel{
         }
      }
      
-     /** encendido: este metodo se encarga de desahabilitar los botones dentro del panel */
+     /** apagado: este metodo se encarga de desahabilitar los botones dentro del panel */
      public void apagado()
      {
         bajarEstacion.setEnabled(false);
