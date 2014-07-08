@@ -61,12 +61,14 @@ public class GUI extends JPanel{
             {
                   if(event.getSource()==bajarEstacion)
 			{
-                            miRadio.bajarEstacion(miRadio.getFrecuencia());
+                            boolean val=miRadio.getFrecuencia();
+                            miRadio.bajarEstacion(val);
                             estacion.setText(miRadio.getEstacion()+"");
                         }
                   if(event.getSource()==subirEstacion)
 			{
-                            miRadio.subirEstacion(miRadio.getFrecuencia());
+                            boolean val=miRadio.getFrecuencia();
+                            miRadio.subirEstacion(val);
                             estacion.setText(miRadio.getEstacion()+"");
                         }
                   if(event.getSource()==power)
@@ -74,9 +76,11 @@ public class GUI extends JPanel{
                             if(miRadio.getEncendido()){
                                 miRadio.apagar();
                                 power.setText("OFF");
+                                apagado();
                             }else{
                                 miRadio.encender();
                                 power.setText("ON");
+                                encendido();
                             }
                         }
                   
