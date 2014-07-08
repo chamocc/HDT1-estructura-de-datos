@@ -23,6 +23,8 @@ public class GUI extends JPanel{
     private Radio miRadio;
     private boolean guardar;
     
+    //metodos
+    //constructor
     public GUI(){
         miRadio=new Radio();
         guardar=false;
@@ -36,6 +38,35 @@ public class GUI extends JPanel{
         for(int i=0; i<12; i++){
             favoritos[i]=new JButton("Fav #"+(i+1));
         }
-        
+    
     }
+    
+    /** encendido: este metodo se encarga de desahabilitar los botones dentro del panel */
+     public void encendido()
+     {
+        bajarEstacion.setEnabled(true);
+        subirEstacion.setEnabled(true);
+        frecuencia.setEnabled(true);
+        guardarLeer.setEnabled(true);
+        for (int i =0;i<12;i++ )
+        {
+            favoritos[i].setEnabled(true);
+        }
+     }
+     
+     /** encendido: este metodo se encarga de desahabilitar los botones dentro del panel */
+     public void apagado()
+     {
+        bajarEstacion.setEnabled(false);
+        subirEstacion.setEnabled(false);
+        frecuencia.setEnabled(false);
+        guardarLeer.setEnabled(false);
+        for (int i =0;i<12;i++ )
+        {
+            favoritos[i].setEnabled(false);
+        }
+     }
+    
+    
+    
 }
