@@ -31,9 +31,9 @@ public class GUI extends JPanel{
         bajarEstacion=new JButton("-");
         subirEstacion=new JButton("+");
         power=new JButton("OFF");
-        frecuencia=new JButton("FM");
+        frecuencia=new JButton("AM");
         guardarLeer=new JButton("Guardar");
-        estacion=new JLabel ("87.9");
+        estacion=new JLabel ("530");
         
         favoritos=new JButton[12];
         for(int i=0; i<12; i++){
