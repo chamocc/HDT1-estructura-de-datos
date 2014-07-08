@@ -27,7 +27,7 @@ public class GUI extends JPanel{
     //constructor
     public GUI(){
         miRadio=new Radio();
-        guardar=false;
+        guardar=true;
         bajarEstacion=new JButton("-");
         subirEstacion=new JButton("+");
         power=new JButton("OFF");
@@ -47,12 +47,20 @@ public class GUI extends JPanel{
         frecuencia.addActionListener(listener1);
         guardarLeer.addActionListener(listener1);
         
+        for(int i=0; i<12; i++){
+            favoritos[i].addActionListener(listener1);
+        }
+        
         add(bajarEstacion);
         add(subirEstacion);
         add(estacion);
         add(power);
         add(frecuencia);
         add(guardarLeer);
+        for(int i=0; i<12; i++){
+            add(favoritos[i]);
+        }
+        setPreferredSize(new Dimension(600,300));
     }
     
     private class ListenerBoton implements ActionListener
@@ -93,7 +101,28 @@ public class GUI extends JPanel{
                                 miRadio.cambiarFrecuencia(true);
                                 frecuencia.setText("FM");
                             }
-                        } 
+                        }
+                 
+                  if(event.getSource()==guardarLeer)
+			{
+                            if(guardar){
+                                guardar=false;
+                                guardarLeer.setText("Leer");
+                            }else{
+                                guardar=true;
+                                guardarLeer.setText("Guardar");
+                            }
+                        }
+                  
+                 for(int i=0; i<12; i++){
+                     if(event.getSource()==favoritos[i]){
+                         if(guardar){
+                             miRadio.guardar(i, miRadio.getEstacion());
+                         }else{
+                             estacion.setText(miRadio.sacar(i)+"");
+                         }
+                     } 
+                 }
             }
 
     }

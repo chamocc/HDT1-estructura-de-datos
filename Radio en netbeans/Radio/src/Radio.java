@@ -18,8 +18,8 @@ public class Radio implements Interfaz{
     public Radio(){
         power=false;
         frecuencia=false;
-        favoritosAM=new double[12];
-        favoritosFM=new double[12];
+        favoritosAM=new double[]{530,530,530,530,530,530,530,530,530,530,530,530};
+        favoritosFM=new double[]{87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9};
         frecuenciaAM=530;
         frecuenciaFM=87.9;
     
@@ -35,8 +35,10 @@ public class Radio implements Interfaz{
         double val;
         if(frecuencia){
             val=favoritosFM[boton];
+            frecuenciaFM=val;
         }else{
             val=favoritosAM[boton];
+            frecuenciaAM=val;
         }
         return val;
     }
