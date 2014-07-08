@@ -23,6 +23,8 @@ public class GUI extends JPanel{
     private Radio miRadio;
     private boolean guardar;
     
+    //metodos
+    //constructor
     public GUI(){
         miRadio=new Radio();
         guardar=false;
@@ -37,6 +39,7 @@ public class GUI extends JPanel{
         for(int i=0; i<12; i++){
             favoritos[i]=new JButton("Fav #"+(i+1));
         }
+
         ListenerBoton listener1= new ListenerBoton();
 	bajarEstacion.addActionListener(listener1);
         subirEstacion.addActionListener(listener1);
@@ -52,12 +55,12 @@ public class GUI extends JPanel{
                   if(event.getSource()==bajarEstacion)
 			{
                             miRadio.bajarEstacion(miRadio.getFrecuencia());
-                            estacion.setText(miRadio.getEstacion());
+                            estacion.setText(miRadio.getEstacion()+"");
                         }
                   if(event.getSource()==subirEstacion)
 			{
                             miRadio.subirEstacion(miRadio.getFrecuencia());
-                            estacion.setText(miRadio.getEstacion());
+                            estacion.setText(miRadio.getEstacion()+"");
                         }
                   if(event.getSource()==power)
 			{
@@ -79,5 +82,35 @@ public class GUI extends JPanel{
                             }
                         } 
             }
+
     }
+    
+    /** encendido: este metodo se encarga de desahabilitar los botones dentro del panel */
+     public void encendido()
+     {
+        bajarEstacion.setEnabled(true);
+        subirEstacion.setEnabled(true);
+        frecuencia.setEnabled(true);
+        guardarLeer.setEnabled(true);
+        for (int i =0;i<12;i++ )
+        {
+            favoritos[i].setEnabled(true);
+        }
+     }
+     
+     /** encendido: este metodo se encarga de desahabilitar los botones dentro del panel */
+     public void apagado()
+     {
+        bajarEstacion.setEnabled(false);
+        subirEstacion.setEnabled(false);
+        frecuencia.setEnabled(false);
+        guardarLeer.setEnabled(false);
+        for (int i =0;i<12;i++ )
+        {
+            favoritos[i].setEnabled(false);
+        }
+     }
+    
+    
+    
 }
