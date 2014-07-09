@@ -71,13 +71,22 @@ public class GUI extends JPanel{
 			{
                             boolean val=miRadio.getFrecuencia();
                             miRadio.bajarEstacion(val);
-                            estacion.setText(miRadio.getEstacion()+"");
+                            if(miRadio.getFrecuencia()){
+                                estacion.setText(miRadio.getEstacionFM()+"");
+                            }else{
+                                estacion.setText(miRadio.getEstacionAM()+"");
+                            }
+                            
                         }
                   if(event.getSource()==subirEstacion)
 			{
                             boolean val=miRadio.getFrecuencia();
                             miRadio.subirEstacion(val);
-                            estacion.setText(miRadio.getEstacion()+"");
+                           if(miRadio.getFrecuencia()){
+                                estacion.setText(miRadio.getEstacionFM()+"");
+                            }else{
+                                estacion.setText(miRadio.getEstacionAM()+"");
+                            }
                         }
                   if(event.getSource()==power)
 			{
@@ -117,7 +126,13 @@ public class GUI extends JPanel{
                  for(int i=0; i<12; i++){
                      if(event.getSource()==favoritos[i]){
                          if(guardar){
-                             miRadio.guardar(i, miRadio.getEstacion());
+                             double val=0;
+                             if(miRadio.getFrecuencia()){
+                               val=miRadio.getEstacionFM();
+                            }else{
+                               val=miRadio.getEstacionAM();
+                            }
+                             miRadio.guardar(i, val);
                          }else{
                              estacion.setText(miRadio.sacar(i)+"");
                          }

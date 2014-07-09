@@ -19,7 +19,8 @@ public interface Interfaz {
     public void subirEstacion(boolean frecuencia);
     public void bajarEstacion(boolean frecuencia);
     public boolean getEncendido();
-    public double getEstacion();
+    public double getEstacionAM();
+    public double getEstacionFM();
     public boolean getFrecuencia();
     
 }

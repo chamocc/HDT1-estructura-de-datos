@@ -152,12 +152,23 @@ public class RadioTest {
      * Test of getEstacion method, of class Radio.
      */
     @Test
-    public void testGetEstacion() {
+    public void testGetEstacionFM() {
         System.out.println("getEstacion");
         Radio instance = new Radio();
-        double expResult = 0.0;
-        double result = instance.getEstacion();
-        assertEquals(expResult, result, 0.0);
+        double expResult = 87.9;
+        double result = instance.getEstacionFM();
+        assertEquals(expResult, result, 87.9);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void testGetEstacionAM() {
+        System.out.println("getEstacion");
+        Radio instance = new Radio();
+        double expResult = 530;
+        double result = instance.getEstacionAM();
+        assertEquals(expResult, result, 530);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
