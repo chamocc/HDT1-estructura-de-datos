@@ -20,7 +20,7 @@ public class GUI extends JPanel{
     private JButton bajarEstacion, subirEstacion, power, frecuencia, guardarLeer;
     private JButton[] favoritos;
     private JLabel estacion;
-    private Radio miRadio;
+    private Interfaz miRadio;
     private boolean guardar;
     
     //metodos
