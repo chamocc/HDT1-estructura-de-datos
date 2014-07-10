@@ -40,8 +40,13 @@ public class GUI extends JPanel{
         power.setBounds(10, 10, 60,60 );
         
         frecuencia=new JButton("AM");
+        frecuencia.setBounds(80, 10, 80, 50);
+        
         guardarLeer=new JButton("Guardar");
+        guardarLeer.setBounds(170, 10, 80,50 );
+                
         estacion=new JLabel ("530");
+        estacion.setBounds(80, 70, 50,50 );
         
         favoritos=new JButton[12];
         for(int i=0; i<12; i++){
