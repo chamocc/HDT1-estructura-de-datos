@@ -61,15 +61,16 @@ public class RadioTest {
         int boton = 0;
         Radio instance = new Radio();
 
-        double expResult = 89.7;
+       
         double result = instance.sacar(boton);
-        assertEquals(expResult, result, 0.0);
+        
 
         boolean val=false;
-        if(instance.sacar(boton)==87.9 || instance.sacar(boton)==530){
+        if(instance.sacar(boton)==87.9 || instance.sacar(boton)==530)
+        {
             val=true;
         }
-
+        assertTrue(val);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
