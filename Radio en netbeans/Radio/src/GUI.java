@@ -26,18 +26,34 @@ public class GUI extends JPanel{
     //metodos
     //constructor
     public GUI(){
+<<<<<<< HEAD
         
         
         c1= new Color(224,20,15);
         setBackground(c1);
+=======
+        setLayout(null);
+        setBackground(Color.GRAY);
+>>>>>>> origin/master
         miRadio=new Radio();
         guardar=true;
         bajarEstacion=new JButton("-");
+        bajarEstacion.setBounds(10, 140, 50, 50);
+        
         subirEstacion=new JButton("+");
+        subirEstacion.setBounds(10, 80, 50,50 );
+        
         power=new JButton("OFF");
+        power.setBounds(10, 10, 60,60 );
+        
         frecuencia=new JButton("AM");
+        frecuencia.setBounds(80, 10, 80, 50);
+        
         guardarLeer=new JButton("Guardar");
+        guardarLeer.setBounds(170, 10, 80,50 );
+                
         estacion=new JLabel ("530");
+        estacion.setBounds(80, 70, 50,50 );
         
         favoritos=new JButton[12];
         for(int i=0; i<12; i++){

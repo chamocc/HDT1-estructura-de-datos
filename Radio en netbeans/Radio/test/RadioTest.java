@@ -36,11 +36,6 @@ public class RadioTest {
     public void tearDown() {
     }
 
-    @Test
-    public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
 
     /**
      * Test of cambiarFrecuencia method, of class Radio.
@@ -48,11 +43,13 @@ public class RadioTest {
     @Test
     public void testCambiarFrecuencia() {
         System.out.println("cambiarFrecuencia");
-        boolean _frecuencia = false;
         Radio instance = new Radio();
-        instance.cambiarFrecuencia(_frecuencia);
+        instance.cambiarFrecuencia(true);
+        boolean frecuencia=instance.getFrecuencia();
+        assertTrue(frecuencia);
+        
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -63,11 +60,19 @@ public class RadioTest {
         System.out.println("sacar");
         int boton = 0;
         Radio instance = new Radio();
+<<<<<<< HEAD
         double expResult = 89.7;
         double result = instance.sacar(boton);
         assertEquals(expResult, result, 0.0);
+=======
+        boolean val=false;
+        if(instance.sacar(boton)==87.9 || instance.sacar(boton)==530){
+            val=true;
+        }
+        assertTrue(val);
+>>>>>>> origin/master
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -78,10 +83,13 @@ public class RadioTest {
         System.out.println("apagar");
         Radio instance = new Radio();
         instance.apagar();
+        boolean apagado=instance.getEncendido();
+        assertFalse(apagado);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
+<<<<<<< HEAD
     /**
      * Test of encender method, of class Radio.
      */
@@ -186,5 +194,7 @@ public class RadioTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
+=======
+>>>>>>> origin/master
     
 }
