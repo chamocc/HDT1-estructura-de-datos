@@ -22,11 +22,14 @@ public class GUI extends JPanel{
     private JLabel estacion;
     private Interfaz miRadio;
     private boolean guardar;
-    
+    private Color c1;
     //metodos
     //constructor
     public GUI(){
-        setBackground(Color.BLACK);
+        
+        
+        c1= new Color(224,20,15);
+        setBackground(c1);
         miRadio=new Radio();
         guardar=true;
         bajarEstacion=new JButton("-");

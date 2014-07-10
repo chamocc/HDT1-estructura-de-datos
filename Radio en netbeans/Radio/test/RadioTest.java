@@ -63,7 +63,7 @@ public class RadioTest {
         System.out.println("sacar");
         int boton = 0;
         Radio instance = new Radio();
-        double expResult = 0.0;
+        double expResult = 89.7;
         double result = instance.sacar(boton);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
@@ -129,7 +129,7 @@ public class RadioTest {
         System.out.println("bajarEstacion");
         boolean frecuencia = false;
         Radio instance = new Radio();
-        instance.bajarEstacion(frecuencia);
+        instance.bajarEstacion(true);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
