@@ -23,6 +23,7 @@ public class GUI extends JPanel{
     private Interfaz miRadio;
     private boolean guardar;
     private Color c1;
+   
     //metodos
     //constructor
     public GUI(){
@@ -33,7 +34,6 @@ public class GUI extends JPanel{
         setBackground(c1);
 
         setLayout(null);
-        setBackground(Color.GRAY);
 
         miRadio=new Radio();
         guardar=true;
