@@ -5,9 +5,11 @@
  */
 
 /**
- * @author Daniel 13158
+ * @author Daniel Gerendas 13158
  * @author Edgar Chamo 13083
  * @author Alejandro Diaz 13082
+ * 
+ * @since 5/07/2014
  */
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
