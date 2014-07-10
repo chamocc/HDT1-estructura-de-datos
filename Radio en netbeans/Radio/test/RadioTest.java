@@ -60,17 +60,16 @@ public class RadioTest {
         System.out.println("sacar");
         int boton = 0;
         Radio instance = new Radio();
-<<<<<<< HEAD
+
         double expResult = 89.7;
         double result = instance.sacar(boton);
         assertEquals(expResult, result, 0.0);
-=======
+
         boolean val=false;
         if(instance.sacar(boton)==87.9 || instance.sacar(boton)==530){
             val=true;
         }
-        assertTrue(val);
->>>>>>> origin/master
+
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -89,7 +88,7 @@ public class RadioTest {
         //fail("The test case is a prototype.");
     }
 
-<<<<<<< HEAD
+
     /**
      * Test of encender method, of class Radio.
      */
@@ -194,7 +193,6 @@ public class RadioTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-=======
->>>>>>> origin/master
+
     
 }
