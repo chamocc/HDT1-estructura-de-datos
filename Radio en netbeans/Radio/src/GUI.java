@@ -88,7 +88,7 @@ public class GUI extends JPanel{
         for(int i=0; i<12; i++){
             add(favoritos[i]);
         }
-        setPreferredSize(new Dimension(600,300));
+        setPreferredSize(new Dimension(1200,300));
     }
     
     private class ListenerBoton implements ActionListener
