@@ -26,6 +26,7 @@ public class GUI extends JPanel{
     //metodos
     //constructor
     public GUI(){
+        setBackground(Color.BLACK);
         miRadio=new Radio();
         guardar=true;
         bajarEstacion=new JButton("-");
