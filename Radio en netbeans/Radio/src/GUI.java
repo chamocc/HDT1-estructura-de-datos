@@ -58,6 +58,7 @@ public class GUI extends JPanel{
         favoritos=new JButton[12];
         for(int i=0; i<12; i++){
             favoritos[i]=new JButton("Fav #"+(i+1));
+            favoritos[i].setBounds(10+(i*90),250,90,50);
         }
 
         ListenerBoton listener1= new ListenerBoton();
