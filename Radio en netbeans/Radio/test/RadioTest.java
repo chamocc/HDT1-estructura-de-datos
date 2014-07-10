@@ -62,7 +62,8 @@ public class RadioTest {
         Radio instance = new Radio();
         double result = instance.sacar(boton);
         boolean val=false;
-        if(instance.sacar(boton)==87.9 || instance.sacar(boton)==530){
+        if(instance.sacar(boton)==87.9 || instance.sacar(boton)==530)
+        {
             val=true;
         }
         assertTrue(val);
