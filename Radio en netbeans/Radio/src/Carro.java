@@ -5,10 +5,19 @@
  */
 
 /**
+<<<<<<< HEAD
+=======
+ * Esta clase es el driver que llama al GUI y corre el programa
+ * 
+>>>>>>> origin/master
  * @author Daniel Gerendas 13158
  * @author Edgar Chamo 13083
  * @author Alejandro Diaz 13082
  * 
+<<<<<<< HEAD
+=======
+ * @since 5/07/2014
+>>>>>>> origin/master
  */
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;

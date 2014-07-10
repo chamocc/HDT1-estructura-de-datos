@@ -11,9 +11,11 @@ import javax.swing.*;
 
 /**
  *
- * @author Daniel 13158
+ * @author Daniel Gerendas 13158
  * @author Edgar Chamo 13083
  * @author Alejandro Diaz 13082
+ * 
+ * @since 5/07/2014
  */
 public class GUI extends JPanel{
     
@@ -25,9 +27,11 @@ public class GUI extends JPanel{
     private Color c1;
    
     //metodos
-    //constructor
+    //constructor: se encarga de inicializar las varibles que se utilizaran en esta clase, asi como de las caracteristicas del panel
     public GUI(){
-   
+
+        
+        
         c1= new Color(224,20,15);
         setBackground(c1);
 
@@ -43,7 +47,7 @@ public class GUI extends JPanel{
         subirEstacion.setBounds(10, 80, 50,50 );
         subirEstacion.setBackground(Color.ORANGE);
         
-        power=new JButton("OFF");
+        power=new JButton("ON");
         power.setBounds(10, 10, 60,60 );
         power.setBackground(Color.ORANGE);
         
@@ -86,7 +90,7 @@ public class GUI extends JPanel{
         for(int i=0; i<12; i++){
             add(favoritos[i]);
         }
-        setPreferredSize(new Dimension(600,300));
+        setPreferredSize(new Dimension(1200,300));
     }
     
     private class ListenerBoton implements ActionListener
