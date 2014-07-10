@@ -37,6 +37,7 @@ public class GUI extends JPanel{
         guardar=true;
         bajarEstacion=new JButton("-");
         bajarEstacion.setBounds(10, 140, 50, 50);
+        //bajarEstacion.setColor(Color.BLACK);
         
         subirEstacion=new JButton("+");
         subirEstacion.setBounds(10, 80, 50,50 );
