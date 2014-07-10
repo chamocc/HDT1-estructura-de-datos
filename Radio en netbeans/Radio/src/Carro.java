@@ -1,15 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
-<<<<<<< HEAD
-=======
  * Esta clase es el driver que llama al GUI y corre el programa
  * 
->>>>>>> origin/master
  * @author Daniel Gerendas 13158
  * @author Edgar Chamo 13083
  * @author Alejandro Diaz 13082
