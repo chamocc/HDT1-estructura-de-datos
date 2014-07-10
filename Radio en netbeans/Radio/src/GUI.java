@@ -49,17 +49,21 @@ public class GUI extends JPanel{
         
         frecuencia=new JButton("AM");
         frecuencia.setBounds(80, 10, 80, 50);
+        frecuencia.setBackground(Color.ORANGE);
         
         guardarLeer=new JButton("Guardar");
         guardarLeer.setBounds(170, 10, 80,50 );
+        guardarLeer.setBackground(Color.ORANGE);
                 
         estacion=new JLabel ("530");
         estacion.setBounds(80, 70, 50,50 );
+        estacion.setBackground(Color.ORANGE);
         
         favoritos=new JButton[12];
         for(int i=0; i<12; i++){
             favoritos[i]=new JButton("Fav #"+(i+1));
             favoritos[i].setBounds(10+(i*90),250,90,50);
+            favoritos[i].setBackground(Color.ORANGE);
         }
 
         ListenerBoton listener1= new ListenerBoton();
