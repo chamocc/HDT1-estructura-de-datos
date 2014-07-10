@@ -16,7 +16,7 @@ public class Radio implements Interfaz{
     private double[] favoritosAM, favoritosFM;
     
     public Radio(){
-        power=false;
+        power=true;
         frecuencia=false;
         favoritosAM=new double[]{530,530,530,530,530,530,530,530,530,530,530,530};
         favoritosFM=new double[]{87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9, 87.9};
