@@ -32,7 +32,6 @@ public class GUI extends JPanel{
         setBackground(c1);
 
         setLayout(null);
-        setBackground(Color.GRAY);
 
         miRadio=new Radio();
         guardar=true;
