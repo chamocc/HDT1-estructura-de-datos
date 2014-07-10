@@ -26,12 +26,19 @@ public class GUI extends JPanel{
     //metodos
     //constructor
     public GUI(){
+        setLayout(null);
         setBackground(Color.GRAY);
         miRadio=new Radio();
         guardar=true;
         bajarEstacion=new JButton("-");
+        bajarEstacion.setBounds(10, 140, 50, 50);
+        
         subirEstacion=new JButton("+");
+        subirEstacion.setBounds(10, 80, 50,50 );
+        
         power=new JButton("OFF");
+        power.setBounds(10, 10, 60,60 );
+        
         frecuencia=new JButton("AM");
         guardarLeer=new JButton("Guardar");
         estacion=new JLabel ("530");
