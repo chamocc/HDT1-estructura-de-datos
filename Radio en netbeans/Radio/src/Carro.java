@@ -5,6 +5,8 @@
  */
 
 /**
+ * Esta clase es el driver que llama al GUI y corre el programa
+ * 
  * @author Daniel Gerendas 13158
  * @author Edgar Chamo 13083
  * @author Alejandro Diaz 13082

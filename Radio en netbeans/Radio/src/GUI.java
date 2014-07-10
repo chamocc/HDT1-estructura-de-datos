@@ -27,7 +27,7 @@ public class GUI extends JPanel{
     private Color c1;
    
     //metodos
-    //constructor
+    //constructor: se encarga de inicializar las varibles que se utilizaran en esta clase, asi como de las caracteristicas del panel
     public GUI(){
 
         
