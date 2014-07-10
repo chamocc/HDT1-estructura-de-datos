@@ -26,15 +26,13 @@ public class GUI extends JPanel{
     //metodos
     //constructor
     public GUI(){
-<<<<<<< HEAD
-        
-        
+   
         c1= new Color(224,20,15);
         setBackground(c1);
-=======
+
         setLayout(null);
         setBackground(Color.GRAY);
->>>>>>> origin/master
+
         miRadio=new Radio();
         guardar=true;
         bajarEstacion=new JButton("-");
