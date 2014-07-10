@@ -18,15 +18,35 @@ public interface Interfaz {
     public void cambiarFrecuencia(boolean frecuencia);
     /**
      * Pre:
-     * Post:
+     * Post:Devuelve una estacion favorita
      * @param boton
      * @return 
      */
     public double sacar(int boton);
+    /**
+     * Pre:
+     * Post: Cambia la visibilidad de los botones
+     */
     public void apagar();
+    /**
+     * Pre:
+     * Post:Cambia de la visibilidad de los botones
+     */
     public void encender();
+    /**
+     * Pre: 
+     * Post: Guarda la estacion favorita
+     * @param boton
+     * @param estacion 
+     */
     public void guardar(int boton, double estacion);
+    /**
+     * Pre:
+     * Post:Devuelve una nueva estacion
+     * @param frecuencia 
+     */
     public void subirEstacion(boolean frecuencia);
+    
     public void bajarEstacion(boolean frecuencia);
     public boolean getEncendido();
     public double getEstacionAM();
