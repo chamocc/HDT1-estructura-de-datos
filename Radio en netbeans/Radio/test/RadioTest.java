@@ -60,17 +60,13 @@ public class RadioTest {
         System.out.println("sacar");
         int boton = 0;
         Radio instance = new Radio();
-<<<<<<< HEAD
-        double expResult = 89.7;
         double result = instance.sacar(boton);
-        assertEquals(expResult, result, 0.0);
-=======
         boolean val=false;
         if(instance.sacar(boton)==87.9 || instance.sacar(boton)==530){
             val=true;
         }
         assertTrue(val);
->>>>>>> origin/master
+
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -87,114 +83,5 @@ public class RadioTest {
         assertFalse(apagado);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
-    }
-
-<<<<<<< HEAD
-    /**
-     * Test of encender method, of class Radio.
-     */
-    @Test
-    public void testEncender() {
-        System.out.println("encender");
-        Radio instance = new Radio();
-        instance.encender();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of guardar method, of class Radio.
-     */
-    @Test
-    public void testGuardar() {
-        System.out.println("guardar");
-        int boton = 0;
-        double estacion = 0.0;
-        Radio instance = new Radio();
-        instance.guardar(boton, estacion);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of subirEstacion method, of class Radio.
-     */
-    @Test
-    public void testSubirEstacion() {
-        System.out.println("subirEstacion");
-        boolean frecuencia = false;
-        Radio instance = new Radio();
-        instance.subirEstacion(frecuencia);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of bajarEstacion method, of class Radio.
-     */
-    @Test
-    public void testBajarEstacion() {
-        System.out.println("bajarEstacion");
-        boolean frecuencia = false;
-        Radio instance = new Radio();
-        instance.bajarEstacion(true);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getEncendido method, of class Radio.
-     */
-    @Test
-    public void testGetEncendido() {
-        System.out.println("getEncendido");
-        Radio instance = new Radio();
-        boolean expResult = false;
-        boolean result = instance.getEncendido();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getEstacion method, of class Radio.
-     */
-    @Test
-    public void testGetEstacionFM() {
-        System.out.println("getEstacion");
-        Radio instance = new Radio();
-        double expResult = 87.9;
-        double result = instance.getEstacionFM();
-        assertEquals(expResult, result, 87.9);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    
-    @Test
-    public void testGetEstacionAM() {
-        System.out.println("getEstacion");
-        Radio instance = new Radio();
-        double expResult = 530;
-        double result = instance.getEstacionAM();
-        assertEquals(expResult, result, 530);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getFrecuencia method, of class Radio.
-     */
-    @Test
-    public void testGetFrecuencia() {
-        System.out.println("getFrecuencia");
-        Radio instance = new Radio();
-        boolean expResult = false;
-        boolean result = instance.getFrecuencia();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-=======
->>>>>>> origin/master
-    
+    }  
 }

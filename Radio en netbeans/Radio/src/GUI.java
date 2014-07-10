@@ -26,15 +26,15 @@ public class GUI extends JPanel{
     //metodos
     //constructor
     public GUI(){
-<<<<<<< HEAD
+
         
         
         c1= new Color(224,20,15);
         setBackground(c1);
-=======
+
         setLayout(null);
         setBackground(Color.GRAY);
->>>>>>> origin/master
+
         miRadio=new Radio();
         guardar=true;
         bajarEstacion=new JButton("-");
@@ -43,7 +43,7 @@ public class GUI extends JPanel{
         subirEstacion=new JButton("+");
         subirEstacion.setBounds(10, 80, 50,50 );
         
-        power=new JButton("OFF");
+        power=new JButton("ON");
         power.setBounds(10, 10, 60,60 );
         
         frecuencia=new JButton("AM");
