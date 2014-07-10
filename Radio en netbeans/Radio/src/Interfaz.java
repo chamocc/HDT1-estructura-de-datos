@@ -16,6 +16,12 @@ public interface Interfaz {
      * @param frecuencia 
      */
     public void cambiarFrecuencia(boolean frecuencia);
+    /**
+     * Pre:
+     * Post:
+     * @param boton
+     * @return 
+     */
     public double sacar(int boton);
     public void apagar();
     public void encender();
