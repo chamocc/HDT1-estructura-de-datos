@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *Esta clase es la parte grafica del programa
+ *la cual le permite al usuario interactuar con los botones
+ *simulando una radio de la vida real. 
  */
 
 
@@ -168,7 +168,9 @@ public class GUI extends JPanel{
 
     }
     
-    /** encendido: este metodo se encarga de habilitar los botones dentro del panel */
+    /** 
+     * Encendido: este metodo se encarga de habilitar los botones dentro del panel
+     */
      public void encendido()
      {
         bajarEstacion.setEnabled(true);
@@ -181,7 +183,9 @@ public class GUI extends JPanel{
         }
      }
      
-     /** apagado: este metodo se encarga de desahabilitar los botones dentro del panel */
+     /**
+      * Apagado este metodo se encarga de deshabilitar los botnes dentro del panl
+      */
      public void apagado()
      {
         bajarEstacion.setEnabled(false);

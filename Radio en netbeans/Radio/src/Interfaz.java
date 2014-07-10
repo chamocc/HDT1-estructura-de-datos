@@ -1,16 +1,20 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Esta clase es la Interfaz que permite implementar 
+ * los metodos para el funcionamiento de la radio.
  */
 
 /**
- * @author Daniel 13158
+ * @author Daniel Gerendas 13158
  * @author Edgar Chamo 13083
  * @author Alejandro Diaz 13082
+ * @since 05/07/2014
  */
 public interface Interfaz {
-    
+    /**
+     * Pre: 
+     * Post: la variable frecuencia se vuelve verdadero o falso
+     * @param frecuencia 
+     */
     public void cambiarFrecuencia(boolean frecuencia);
     public double sacar(int boton);
     public void apagar();
