@@ -110,6 +110,7 @@ public class Radio implements InterfazRadio{
                 frecuenciaAM=530;
             }
         }
+        
     }
      /**
      * Disminuye el valor de la estación. 
