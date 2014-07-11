@@ -99,7 +99,7 @@ public class GUI extends JPanel{
                   if(event.getSource()==bajarEstacion)
 			{
                             boolean val=miRadio.getFrecuencia();
-                            miRadio.bajarEstacion(val);
+                            miRadio.bajarEstacion();
                             if(miRadio.getFrecuencia()){
                                 estacion.setText(miRadio.getEstacionFM()+"");
                             }else{
@@ -110,7 +110,7 @@ public class GUI extends JPanel{
                   if(event.getSource()==subirEstacion)
 			{
                             boolean val=miRadio.getFrecuencia();
-                            miRadio.subirEstacion(val);
+                            miRadio.subirEstacion();
                            if(miRadio.getFrecuencia()){
                                 estacion.setText(miRadio.getEstacionFM()+"");
                             }else{

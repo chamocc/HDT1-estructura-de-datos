@@ -98,7 +98,7 @@ public class Radio implements Interfaz{
      * @param frecuencia Si la frecuencia es true lo hace para FM y si es false lo hace para AM
      */
     @Override
-    public void subirEstacion(boolean frecuencia) {
+    public void subirEstacion() {
          if(frecuencia){
             frecuenciaFM+=0.2;
             if(frecuenciaFM>107.9){
@@ -116,7 +116,7 @@ public class Radio implements Interfaz{
      * @param frecuencia Si la frecuencia es true lo hace para FM y si es false lo hace para AM
      */
     @Override
-    public void bajarEstacion(boolean frecuencia) {
+    public void bajarEstacion() {
         if(frecuencia){
             frecuenciaFM-=0.2;
             if(frecuenciaFM<87.9){
