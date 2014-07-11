@@ -22,7 +22,7 @@ public class GUI extends JPanel{
     private JButton bajarEstacion, subirEstacion, power, frecuencia, guardarLeer;
     private JButton[] favoritos;
     private JLabel estacion;
-    private Interfaz miRadio;
+    private InterfazRadio miRadio;
     private boolean guardar;
     private Color c1;
    

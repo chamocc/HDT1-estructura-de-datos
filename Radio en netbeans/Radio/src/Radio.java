@@ -11,7 +11,7 @@
  * 
  * @since 5/7/2014
  */
-public class Radio implements Interfaz{
+public class Radio implements InterfazRadio{
 
     private double frecuenciaAM, frecuenciaFM;
     private boolean power, frecuencia;
