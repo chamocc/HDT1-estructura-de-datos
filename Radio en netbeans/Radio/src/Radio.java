@@ -98,17 +98,20 @@ public class Radio implements InterfazRadio{
      * @param frecuencia Si la frecuencia es true lo hace para FM y si es false lo hace para AM
      */
     @Override
-    public void subirEstacion() {
+    public double subirEstacion() {
          if(frecuencia){
             frecuenciaFM+=0.2;
             if(frecuenciaFM>107.9){
                 frecuenciaFM=87.9;
             }
+            return frecuenciaFM;
+            
         }else{
             frecuenciaAM+=10;
             if(frecuenciaAM>1610){
                 frecuenciaAM=530;
             }
+            return frecuenciaAM;
         }
     }
      /**
@@ -116,17 +119,19 @@ public class Radio implements InterfazRadio{
      * @param frecuencia Si la frecuencia es true lo hace para FM y si es false lo hace para AM
      */
     @Override
-    public void bajarEstacion() {
+    public double bajarEstacion() {
         if(frecuencia){
             frecuenciaFM-=0.2;
             if(frecuenciaFM<87.9){
                 frecuenciaFM=107.9;
             }
+            return frecuenciaFM;
         }else{
             frecuenciaAM-=10;
             if(frecuenciaAM<530){
                 frecuenciaAM=1610;
             }
+            return frecuenciaAM;
         }
     }
     /**

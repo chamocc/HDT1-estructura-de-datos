@@ -45,9 +45,9 @@ public interface InterfazRadio {
      * Post:Devuelve una nueva estacion
      * @param frecuencia 
      */
-    public void subirEstacion();
+    public double subirEstacion();
     
-    public void bajarEstacion();
+    public double bajarEstacion();
     public boolean getEncendido();
     public double getEstacionAM();
     public double getEstacionFM();
